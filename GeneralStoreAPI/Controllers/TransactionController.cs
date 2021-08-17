@@ -22,7 +22,7 @@ namespace GeneralStoreAPI.Models
                 return BadRequest("Your request body cannot be empty.");
             }
 
-            Product product = await _context.Products.FindAsync(model.ProductSKU);
+            Product product = await _context.Products.FindAsync(model.Sku);
 
             if (product is null)
             {

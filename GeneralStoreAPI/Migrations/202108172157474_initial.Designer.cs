@@ -13,7 +13,7 @@ namespace GeneralStoreAPI.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202108130120438_initial"; }
+            get { return "202108172157474_initial"; }
         }
         
         string IMigrationMetadata.Source
