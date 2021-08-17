@@ -11,11 +11,13 @@ namespace GeneralStoreAPI.Models
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("CustomerId")]
+        //[ForeignKey("CustomerId")]
         public int CustomerId { get; set; }
-        [ForeignKey("SKU")]
+        //[ForeignKey("SKU")]
         public string ProductSKU { get; set; }
+        [Required]
         public int ItemCount { get; set; }
+        [Required]
         public DateTime DateOfTransaction { get; set; }
 
     }
